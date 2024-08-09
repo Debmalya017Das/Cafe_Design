@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import bur from './burger.jpg';
 import jc from './juice.jpg';
 import SectionSeparator from '../components/SectionSeparator'
+// import social from './social.jpg'
 
 const HomePage = () => {
   const settings = {
@@ -22,7 +23,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-100 from-10% to-bg-gray-50 to-90% overflow-x-hidden"> {/* Added overflow-x-hidden */}
+    <div className="bg-gradient-to-b from-blue-100 from-30% to-bg-gray-50 to-70% overflow-x-hidden"> {/* Added overflow-x-hidden */}
       <div className="relative">
         <Slider {...settings}>
           <div>
@@ -94,9 +95,8 @@ const HomePage = () => {
     </div>
       
     <SectionSeparator/>
-      <div className="bg-white py-12">
-
-        <div className="container mx-auto px-4 ">
+      <div className={`bg-gradient-to-t from-amber-100 to-bg-amber-50 py-10`}>
+         <div className="container mx-auto px-4 ">
           <h2 className="text-5xl font-bold text-center font-great-vibes text-amber-950 mb-12">Explore the Café</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:mx-24">
             <img src="https://t3.ftcdn.net/jpg/07/48/64/80/240_F_748648005_ZTYI1TUm8cywVP8yDK4Tp3V2DZw78ArL.jpg" alt="Restaurant interior" className="w-full h-64 object-cover rounded-lg hover:scale-105 duration-300" />
