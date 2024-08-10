@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import Menu from './pages/Menu';
+import Order from './pages/Order';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs/>} />
             <Route path="/menu" element={<Menu/>} />
-            {/* Add more routes for other pages */}
+            <Route path="/order" element={<Order/>} />
           </Routes>
         </main>
         <Footer />

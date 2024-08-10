@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
-            <p>Café Coffee Day is a popular coffee chain known for its quality beverages and cozy atmosphere.</p>
+            <p>Our Cafe is a popular coffee chain known for its quality beverages and cozy atmosphere.</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; 2024 Café Coffee Day. All rights reserved.</p>
+          <p>&copy;Cafe</p>
         </div>
       </div>
     </footer>

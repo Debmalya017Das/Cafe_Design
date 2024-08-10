@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <>
     <div className="relative h-[31rem] w-20/21">
-         <div className="absolute inset-0 bg-black bg-opacity-50 rounded-b-[25px]" style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover',  backgroundPosition: 'center', }}/>
+         <div className="absolute inset-0 bg-blue-200 bg-opacity-50 rounded-b-[25px]" style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover',  backgroundPosition: 'center', }}/>
     </div>
     <div className="bg-gradient-to-b from-blue-200 to-bg-gray-50 overflow-x-hidden min-h-screen pt-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">

@@ -24,25 +24,26 @@ const HomePage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-blue-100 from-30% to-bg-gray-50 to-70% overflow-x-hidden "> {/* Added overflow-x-hidden */}
+    <div className="bg-gradient-to-b from-blue-200 from-30% to-bg-gray-50 to-70% overflow-x-hidden "> {/* Added overflow-x-hidden */}
       <div className="relative">
         <Slider {...settings}>
           <div>
-            <div className="relative h-[35rem] w-full"> {/* Added w-full */}
+            <div className="relative h-[35rem] w-full overflow-hidden rounded-b-[35px]"> {/* Added w-full */}
               <div
-                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center "
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center  shadow-lg"
                 style={{
                   backgroundImage: `url(https://www.cafecoffeeday.com/sites/default/files/1920x760%20%281%29.jpg)`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
+                  
                 }}
               />
             </div>
           </div>
           <div>
-            <div className="relative h-[35rem] w-full"> {/* Added w-full */}
+            <div className="relative h-[35rem] w-full overflow-hidden rounded-b-[35px]"> {/* Added w-full */}
               <div
-                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center  shadow-lg"
                 style={{
                   backgroundImage: `url(${bur})`,
                   backgroundSize: 'cover',
@@ -52,9 +53,9 @@ const HomePage = () => {
             </div>
           </div>
           <div>
-            <div className="relative h-[35rem] w-full"> {/* Added w-full */}
+            <div className="relative h-[35rem] w-full overflow-hidden rounded-b-[35px]"> {/* Added w-full */}
               <div
-                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center  shadow-lg"
                 style={{
                   backgroundImage: `url(${jc})`,
                   backgroundSize: 'cover',
