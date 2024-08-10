@@ -1,20 +1,12 @@
 import SectionSeparator from '../components/SectionSeparator';
-import banner from './banner.jpg'
+import banner from './images/banner.jpg'
 const AboutUs = () => {
   return (
     <>
     <div className="relative h-[31rem] w-20/21">
-         <div
-                className="absolute inset-0 bg-black bg-opacity-50  rounded-b-[25px]"
-                style={{
-                  backgroundImage: `url(${banner})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              />
-
+         <div className="absolute inset-0 bg-black bg-opacity-50 rounded-b-[25px]" style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover',  backgroundPosition: 'center', }}/>
     </div>
-    <div className="bg-gradient-to-b from-blue-200 to-bg-gray-50  overflow-x-hidden min-h-screen pt-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-b from-blue-200 to-bg-gray-50 overflow-x-hidden min-h-screen pt-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-great-vibes text-indigo-900 text-center mb-8 ">
           Our Journey
@@ -53,7 +45,7 @@ const AboutUs = () => {
             <a href="mailto:contact@swancafe.co.za" className="text-indigo-600 hover:text-indigo-800">contact@swancafe.co.za</a>
           </div>
 
-          <div className="bg-amber-50  rounded-[25px] hover:scale-105 duration-300 shadow-lg  p-6">
+          <div className="bg-amber-50 rounded-[25px] hover:scale-105 duration-300 shadow-lg  p-6">
             <h2 className="text-2xl  font-montserrat text-indigo-900 mb-4">Opening Hours</h2>
             <p className="text-gray-700 mb-2">Mon to Sat: 8:30 to 16:00</p>
             <p className="text-gray-700">Sunday and public holidays: 9:00 to 14:00</p>

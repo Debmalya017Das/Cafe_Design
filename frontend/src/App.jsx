@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
+import Menu from './pages/Menu';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs/>} />
+            <Route path="/menu" element={<Menu/>} />
             {/* Add more routes for other pages */}
           </Routes>
         </main>

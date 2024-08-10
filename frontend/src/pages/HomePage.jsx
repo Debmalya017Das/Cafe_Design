@@ -1,9 +1,10 @@
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bur from './burger.jpg';
-import jc from './juice.jpg';
+import bur from './images/burger.jpg';
+import jc from './images/juice.jpg';
 import SectionSeparator from '../components/SectionSeparator'
+import {Link} from 'react-router-dom'
 // import social from './social.jpg'
 
 const HomePage = () => {
@@ -23,13 +24,13 @@ const HomePage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-blue-100 from-30% to-bg-gray-50 to-70% overflow-x-hidden"> {/* Added overflow-x-hidden */}
+    <div className="bg-gradient-to-b from-blue-100 from-30% to-bg-gray-50 to-70% overflow-x-hidden "> {/* Added overflow-x-hidden */}
       <div className="relative">
         <Slider {...settings}>
           <div>
             <div className="relative h-[35rem] w-full"> {/* Added w-full */}
               <div
-                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center "
                 style={{
                   backgroundImage: `url(https://www.cafecoffeeday.com/sites/default/files/1920x760%20%281%29.jpg)`,
                   backgroundSize: 'cover',
@@ -104,7 +105,9 @@ const HomePage = () => {
             <img src="https://t4.ftcdn.net/jpg/05/59/19/99/240_F_559199909_ZbXHYo3MAhBwg293cbk1J2m3zPAkVhWv.jpg" alt="Restaurant interior" className="w-full h-64 object-cover rounded-lg hover:scale-105 duration-300" />
           </div>
           <div className="text-center mt-8">
-            <button className="bg-red-500 text-white px-6 py-2 rounded-full text-lg hover:bg-red-600 transition duration-300">Explore Menu</button>
+            <Link to="/menu">
+              <button className="bg-red-500 text-white px-6 py-2 rounded-full text-lg hover:bg-red-600 transition duration-300">Explore Menu</button>
+            </Link>
           </div>
         </div>
                 {/* <SectionSeparator/> */}
