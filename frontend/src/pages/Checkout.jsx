@@ -35,28 +35,28 @@ function Checkout() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Checkout</h1>
+    <div className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-200 to-slate-100 pb-9">
+      <h1 className="text-3xl font-semibold text-blue-950 text-center mb-8 font-montserrat">Checkout</h1>
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
         <div className="mb-4">
-          <label htmlFor="address" className="block mb-2">Address</label>
+          <label htmlFor="address" className="block mb-2 font-montserrat text-md">Address</label>
           <textarea
             id="address"
             name="address"
             value={formData.address}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2  rounded border border-black p-2 "
           ></textarea>
         </div>
         <div className="mb-4">
-          <label htmlFor="paymentMethod" className="block mb-2">Payment Method</label>
+          <label htmlFor="paymentMethod" className="block mb-2 font-montserrat">Payment Method</label>
           <select
             id="paymentMethod"
             name="paymentMethod"
             value={formData.paymentMethod}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border border-black p-2 rounded font-montserrat"
           >
             <option value="credit">Credit Card</option>
             <option value="debit">Debit Card</option>
@@ -65,7 +65,7 @@ function Checkout() {
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+          className="w-1/3 bg-blue-800 text-white px-3 py-2 rounded-[25px] hover:bg-blue-950 hover:scale-110 transition duration-300 mt-3"
         >
           Place Order
         </button>
