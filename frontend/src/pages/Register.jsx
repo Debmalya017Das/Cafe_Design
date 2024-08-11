@@ -29,9 +29,10 @@ function Register() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Register</h1>
-      {error && <p className="text-red-500 text-center mb-4">{error}</p>}
+   <div className="flex justify-center items-center h-full bg-gradient-to-r from-blue-200 to-slate-100 py-12">
+  <div className="bg-amber-100 shadow-lg rounded-lg p-8 max-w-sm w-full border border-black p-2">
+    <h1 className="text-3xl font-semibold font-montserrat text-blue-950 text-center mb-6">Register</h1>
+    {error && <p className="text-red-500 text-center mb-4">{error}</p>}
       <form onSubmit={handleSubmit} className="max-w-md mx-auto">
         <div className="mb-4">
           <label htmlFor="name" className="block mb-2">Name</label>
@@ -42,7 +43,8 @@ function Register() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border border-black p-2"
+            placeholder='name'
           />
         </div>
         <div className="mb-4">
@@ -54,7 +56,8 @@ function Register() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border border-black p-2"
+            placeholder='valid mail'
           />
         </div>
         <div className="mb-4">
@@ -66,19 +69,24 @@ function Register() {
             value={formData.password}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border rounded border border-black p-2"
+            placeholder='password'
           />
         </div>
-        <button
+        <div className='text-center'>
+           <button
           type="submit"
-          className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+          className="w-1/3 bg-blue-950 text-white py-2 justify-items-center rounded hover:scale-110 transition duration-300"
         >
           Register
         </button>
+        </div>
+       
       </form>
       <p className="text-center mt-4">
         Already have an account? <Link to="/login" className="text-blue-500 hover:underline">Login</Link>
       </p>
+    </div>
     </div>
   );
 }

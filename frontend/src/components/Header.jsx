@@ -22,16 +22,29 @@ const Header = () => {
         <Link to="/" className="text-red-500 font-bold text-2xl lg:ml-24">Café</Link>
         <nav>
           <ul className="flex space-x-4 ">
-            <li><Link to="/" className="text-slate-800 mx-3 hover:scale-110 inline-block duration-300 hover:text-red-500">Home</Link></li>
-            <li><Link to="/about" className="text-slate-800 mx-3 hover:text-red-500 hover:scale-110 inline-block duration-300">About Us</Link></li>
-            <li><Link to="/menu" className="text-slate-800 mx-3 hover:text-red-500 hover:scale-110 inline-block duration-300">Menu</Link></li>
-            <li><Link to="/order" className="text-slate-800 mx-3 hover:text-red-500 hover:scale-110 inline-block duration-300">Order Online</Link></li>
+            <li><Link to="/" className="text-slate-800 mx-3 hover:scale-110 inline-block duration-300 hover:text-red-500 font-montserrat">Home</Link></li>
+            <li><Link to="/about" className="text-slate-800 mx-3 hover:text-red-500 hover:scale-110 inline-block duration-300 font-montserrat">About Us</Link></li>
+            <li><Link to="/menu" className="text-slate-800 mx-3 hover:text-red-500 hover:scale-110 inline-block duration-300 font-montserrat">Menu</Link></li>
+            <li><Link to="/order" className="text-slate-800 mx-3 hover:text-red-500 hover:scale-110 inline-block duration-300 font-montserrat">Order Online</Link></li>
           </ul>
         </nav>
         <div className="flex items-center space-x-4 lg:mr-12">
           {isLoggedIn ? (
-            <button onClick={handleLogout} className="text-slate-800 hover:text-red-500">
-              Logout
+            <button onClick={handleLogout} className="hover:text-red-500">
+               <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                className="w-5 h-5 mr-2"
+              >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 11-6 0v-1m6-10V5a3 3 0 00-6 0v1"
+            />
+          </svg>
             </button>
           ) : (
             <Link to="/login" className="text-slate-800 hover:text-red-500">
